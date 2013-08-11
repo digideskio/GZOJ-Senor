@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* 江苏省赣榆高级中学 在线评测系统 ‘现代’皮肤 by 张森：zhs490770@github   (lyxss.tk) */
+
+.regnotice {
+	display:inline;
+	font-size:13px;
+	color:grey;
+	width:100%;
+}
+
+.reg-alert {
+	display:none;
+	font-size:13px;
+	color:red;
+	background-color:rgba(255,255,204,0.7);
+	box-shadow:0 0 5px rgba(255,153,51,0.7);
+	border:1px solid #F96;
+	border-radius:3px;
+	padding:3px 12px 3px 12px;
+	margin:0;
+}

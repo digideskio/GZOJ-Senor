@@ -1,0 +1,14 @@
+<?php
+$judge_result=Array("提交中","提交重测","编译中","运行中","答案正确","Presentation Error","答案错误","时间超出限制","内存超出限制","输出超出限制","运行时错误","编译错误","未知错误 #1","未知错误 #2");
+$jresult=Array("Pending","Pending Rejudge","Compiling","Running","AC","PE","WA","TLE","MLE","OLE","RE","CE","Unknown #1","Unknown #2");
+$judge_color=Array("gray","gray","orange","orange","green","red","red","red","red","red","red","navy ","navy");
+$judge_color_btn=Array("btn gray","btn btn-info","btn btn-warning","btn btn-warning","btn btn-success","btn btn-danger","btn btn-danger","btn btn-warning","btn btn-warning","btn btn-warning","btn btn-warning","btn btn-warning","btn btn-warning","btn btn-info");
+$rcolor=Array("grey","grey","orange","orange","green","red","red","red","red","red","red","brown","red","red");
+$language_name=Array("C","C++","Pascal");
+//highlightjs
+$lang_syntax=Array("cpp","cpp","delphi");
+$language_ext=Array( "c", "cpp", "pas");
+$PID="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	$ScoreColor=array(array(244,26,25),array(244,27,25),array(244,29,25),array(244,31,25),array(245,34,25),array(245,36,25),array(245,39,25),array(245,42,25),array(246,45,25),array(246,48,25),array(247,52,26),array(248,55,25),array(248,58,25),array(249,62,26),array(249,66,26),array(250,70,25),array(250,73,26),array(251,77,25),array(252,82,26),array(252,84,25),array(252,89,26),array(252,93,25),array(252,97,26),array(252,102,25),array(252,106,26),array(252,111,25),array(252,115,25),array(253,119,25),array(253,124,26),array(253,128,26),array(252,133,26),array(252,138,25),array(252,142,26),array(253,146,26),array(253,151,25),array(252,156,26),array(253,161,26),array(252,165,26),array(252,169,27),array(252,174,26),array(252,178,26),array(253,182,27),array(252,187,26),array(252,190,26),array(252,195,27),array(252,199,26),array(252,203,27),array(252,207,27),array(253,210,26),array(252,214,27),array(252,218,27),array(252,221,27),array(252,225,27),array(252,228,27),array(252,232,27),array(253,234,27),array(252,237,27),array(253,239,27),array(252,242,27),array(252,245,28),array(252,246,28),array(252,249,28),array(253,251,28),array(252,252,28),array(252,254,27),array(252,255,28),array(249,255,28),array(246,255,29),array(242,255,29),array(237,255,29),array(232,255,29),array(228,255,29),array(222,255,30),array(216,255,30),array(210,255,30),array(203,255,30),array(197,255,31),array(191,253,31),array(183,251,32),array(176,249,31),array(169,246,32),array(162,243,32),array(154,240,33),array(147,237,33),array(140,234,34),array(133,231,34),array(126,228,34),array(119,225,34),array(111,222,34),array(104,218,35),array(98,215,36),array(92,212,36),array(85,209,36),array(79,207,36),array(75,205,36),array(69,202,37),array(64,200,37),array(59,198,37),array(55,195,37),array(50,195,38),array(48,192,37)); //0-100都有~
+
+?>

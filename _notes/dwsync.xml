@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="index.php" server="172.16.11.10" local="130199824988501256" remote="130199824800000000" Dst="0" />
+<file name="about.php" server="172.16.11.10" local="130193133118014207" remote="130196640600000000" Dst="0" />
+<file name="ajax_ojheader.php" server="172.16.11.10" local="130193133086372397" remote="130196641200000000" Dst="0" />
+<file name="ajax_problemset.php" server="172.16.11.10" local="130193133018508516" remote="130196641200000000" Dst="0" />
+<file name="ajax_problem_status.php" server="172.16.11.10" local="130193133056860709" remote="130196641200000000" Dst="0" />
+<file name="ajax_solution_status.php" server="172.16.11.10" local="130193132991966998" remote="130196641200000000" Dst="0" />
+<file name="checkuser.php" server="172.16.11.10" local="130193132948394505" remote="130196641200000000" Dst="0" />
+<file name="login.php" server="172.16.11.10" local="130193132827527592" remote="130196641200000000" Dst="0" />
+<file name="logout.php" server="172.16.11.10" local="130193132771704399" remote="130196641200000000" Dst="0" />
+<file name="nonajax_solution_status.php" server="172.16.11.10" local="130193132746182940" remote="130196641800000000" Dst="0" />
+<file name="problem.php" server="172.16.11.10" local="130193132721101505" remote="130196641800000000" Dst="0" />
+<file name="problemset.php" server="172.16.11.10" local="130193132694469982" remote="130196641800000000" Dst="0" />
+<file name="register.php" server="172.16.11.10" local="130193132667688450" remote="130196641800000000" Dst="0" />
+<file name="registerpage.php" server="172.16.11.10" local="130193132642166990" remote="130196641800000000" Dst="0" />
+<file name="submit.php" server="172.16.11.10" local="130193132600494607" remote="130196641800000000" Dst="0" />
+<file name="vcode.php" server="172.16.11.10" local="130193132574983148" remote="130196641800000000" Dst="0" />
+<file name="_loadskin.php" server="172.16.11.10" local="130197269589806560" remote="130197354600000000" Dst="0" />
+<file name="loginpage.php" server="172.16.11.10" local="130193132799185971" remote="130196641200000000" Dst="0" />
+<file name="ajax_getnews.php" server="172.16.11.10" local="130193617678262065" remote="130196641200000000" Dst="0" />
+<file name="error.php" server="172.16.11.10" local="130193132410000000" remote="130196641200000000" Dst="0" />
+<file name="news.php" server="172.16.11.10" local="130193616198467426" remote="130196641800000000" Dst="0" />
+<file name="shownews.php" server="172.16.11.10" local="130193616242379938" remote="130196641800000000" Dst="0" />
+<file name="ranklist.php" server="172.16.11.10" local="130193892801206771" remote="130196641800000000" Dst="0" />
+<file name="bbs.php" server="172.16.11.10" local="130194040419580582" remote="130196641200000000" Dst="0" />
+<file name="contest.php" server="172.16.11.10" local="130194040078301062" remote="130196641200000000" Dst="0" />
+<file name="status.php" server="172.16.11.10" local="130194040326675268" remote="130196641800000000" Dst="0" />
+<file name="PHPnow-1.5.6.zip" server="172.16.11.10" local="130178364070391171" remote="130196643000000000" Dst="0" />
+<file name="ajax_get_src.php" server="172.16.11.10" local="130194824500923205" remote="130196641200000000" Dst="0" />
+<file name="nocache.txt" server="172.16.11.10" local="130196211418684097" remote="130196641800000000" Dst="0" />
+<file name="userinfo.php" server="172.16.11.10" local="130195718711890433" remote="130196641800000000" Dst="0" />
+<file name="baidu_verify_BerCkF61za.html" server="172.16.11.10" local="130196476320846540" remote="130196641200000000" Dst="0" />
+<file name="contestresult.php" server="172.16.11.10" local="130196299775836955" remote="130196641200000000" Dst="0" />
+<file name="thread.php" server="172.16.11.10" local="130196299683501674" remote="130196641800000000" Dst="0" />
+<file name="webscan_360_cn.html" server="172.16.11.10" local="130196480007515170" remote="130196641800000000" Dst="0" />
+<file name="changeskin.php" server="172.16.11.10" local="130196648825370129" remote="130196648400000000" Dst="0" />
+<file name="settings.php" server="172.16.11.10" local="130197224582578479" remote="130197354600000000" Dst="0" />
+<file name="ban.php" server="172.16.11.10" local="130200063385596790" remote="130200064200000000" Dst="0" />
+</dwsync>
