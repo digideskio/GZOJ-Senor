@@ -16,7 +16,9 @@ function festival($today){
 	$md_lunar=substr_replace($nl_today,'',0,5);
 	$md_solar=substr_replace($today,'',0,5);
 	@$f_lunar=$arr_lunar[$md_lunar];
+	if($_GET['lunar']!='') @$f_lunar=$arr_lunar[$_GET['lunar']];		//节日预览
 	@$f_solar=$arr_solar[$md_solar];
+	if($_GET['solar']!='') @$f_solar=$arr_solar[$_GET['solar']];
 	return trim($f_lunar==''?$f_solar:$f_lunar);		//在我看来，农历节日要比阳历重要！
 }
 ?>
