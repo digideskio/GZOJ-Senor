@@ -5,9 +5,9 @@ session_set_cookie_params($lifeTime);
 	ini_set("display_errors","Off");
 static 	$DB_HOST="localhost";
 static 	$DB_NAME="jol";
-static 	$DB_USER="mysql用户名";
-static 	$DB_PASS="mysql密码";
-	// connect db    注释，一下有些内容是直接复制hustoj的，是无效的，不影响网页显示效果，不用改。。最好把上边的内容改改就算了。
+static 	$DB_USER="jol";
+static 	$DB_PASS="jol";
+	// connect db 
 static 	$OJ_NAME="HUSTOJ";
 static 	$OJ_HOME="./";
 static 	$OJ_ADMIN="root@localhost";

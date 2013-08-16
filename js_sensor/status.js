@@ -22,6 +22,9 @@ function view_solution_status(id)
 
 function showmysrc(id,lang)
 {
+	stat_id=id;
+	nowtype=0;
+
 	lasttop=document.body.scrollTop+document.documentElement.scrollTop;
 	$('#stat-l2').fadeIn(400);
 	$('#stat_text').html('等待请求');
@@ -40,6 +43,7 @@ function showmysrc(id,lang)
 		}
 	);
 	$("html,body").animate({"scrollTop":$('#stat-l2').offset().top-100},400,"swing");
+
 }
 
 function _brush()

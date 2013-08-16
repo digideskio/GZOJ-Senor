@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="db_info.inc.php" server="172.16.11.10" local="130202473664262823" remote="130202473800000000" Dst="0" />
+<file name="db_info.inc.php" server="172.16.11.10" local="130208304056982481" remote="130208304000000000" Dst="0" />
 <file name="my_func.inc.php" server="172.16.11.10" local="130202461521088273" remote="130202470200000000" Dst="0" />
 <file name="const.inc.php" server="172.16.11.10" local="130196257792996556" remote="130196641200000000" Dst="0" />
 <file name="check_get_key.php" server="172.16.11.10" local="130184965150394117" remote="130196641200000000" Dst="0" />
@@ -12,4 +12,5 @@
 <file name="problem.php" server="172.16.11.10" local="130192126650151382" remote="130196641200000000" Dst="0" />
 <file name="Vera.ttf" server="172.16.11.10" local="130188593319083486" remote="130192159800000000" Dst="0" />
 <file name="login-gzoj.php" server="172.16.11.10" local="130188593319083486" remote="130196641200000000" Dst="0" />
+<file name="sensoroj-festival.php" server="172.16.11.10" local="130209139380760880" remote="130209139200000000" Dst="0" />
 </dwsync>

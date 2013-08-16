@@ -79,6 +79,7 @@ function UI_Init()
 	$("#nav").click(function(e){
 		e.stopPropagation();
 		$(".dropdown-menu[x-data-stat='1']").parent().children("a").click();
+		if(fstt) fstt();
 	});
 }
 
@@ -352,3 +353,32 @@ function news_back_to_list()
 }
 
 //$(function(){$("#newsshowboard").perfectScrollbar();});
+
+
+(function(a) {
+    a.fn.typewriter = function(callback) {			//modified by zhs;小森森 
+        this.each(function() {
+            var d = a(this),
+            c = d.html(),
+            b = 0;
+            d.html("");
+            var e = setInterval(function() {
+                var f = c.substr(b, 1);
+                if (f == "<") {
+                    b = c.indexOf(">", b) + 1
+                } else if(f=="&") {
+					b = c.indexOf(";",b)+1;
+				} else {
+                    b++
+                }
+                d.html(c.substring(0, b) + (b & 1 ? "_": ""));
+                if (b >= c.length) {
+					callback();
+                    clearInterval(e)
+                }
+            },
+            105)
+        });
+        return this
+    }
+})(jQuery);

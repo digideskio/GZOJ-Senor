@@ -132,6 +132,7 @@ var ScoreColor=[[244,26,25],[244,27,25],[244,29,25],[244,31,25],[245,34,25],[245
 
 function _chkstat(sid)
 {
+	if(typeof stat_id!='undefined')
 	if(sid!=stat_id) return;
 	judge_result=new Array("提交中","提交重测","编译中","运行中","答案正确","Presentation Error","答案错误","运行时间超出限制","内存超出限制","输出超出限制","运行时错误","编译错误","未知错误 #1","未知错误 #2");
 	rcolor=new Array("grey","grey","orange","orange","green","red","red","red","red","red","red","brown","red","red");
