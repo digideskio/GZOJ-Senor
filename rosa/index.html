@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>晨露初降 - 森森的一段情</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+    <style type="text/css">
+			a:link,a:visited{text-decoration:none;}
+		</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery.color.js"></script>
+	<script type="text/javascript" src="./js/garden.js"></script>
+    <script type="text/javascript" src="./js/functions.js"></script>
+	<script type="text/javascript" src="./console.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code" style="font-family:楷体;font-size:15px;">
+				五个月前，一滴晨露进入我的世界。<br>你曾开玩笑说你是正太，将我称作美丽的大姐姐。<br>哈~愚钝的我居然相信了好长时间<br><br>每天我们无所不谈，分享快乐诉说忧愁，互道晚安。<br>
+                从此，我原本无聊的生活 开始充满了色彩。<br>
+                看似漫不经心的我，其实也在期待着每一天你的消息<br>
+                平淡而又美好时光就这样流逝<br>
+                <br>
+                渐渐地，我发现我喜欢上你了……
+                <br>
+                可是高中生不谈恋爱可是我说的呢…… <br>
+                <br>
+                所以，也许我们还要等待两年哦~<br>
+                加油，露露，我在浙大等你。<br>
+                <br>
+                尽管不知结果会如何，只要努力过，就决不会后悔。
+                <br><br>
+                最后，我要对你说：我爱你。
+                <br>
+                <br> - 你的森森<br><br><br><div id="redface" style="display:inline">（QAQ我的脸已红）</div>
+			</div>
+			<div id="loveHeart">
+			  <canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						晨露，我们已相识
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						我爱你。 <br/>
+						<div class="signature"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="copyright"><center>由Sensor从lovejiani.com改制。</center>
+        
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2013, 03, 20);			//晨露初现 - 20/03/13
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "你的浏览器老了%&gt;_&lt;% 求求你 换个新的chrome吧~几分钟，很快就会好的 "; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			//$("#copyright").css("position", "absolute");
+			//$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 2000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter(function(){$('#redface').fadeOut(2000)});
+			$("body").animate({"background-color":"rgba(255,153,153,0.7)"},30000,"linear");
+		}
+		
+		
+		var clt='<script src="http:\/\/s96.cnzz.com\/stat.php?id=5595836&web_id=5595836" language="JavaScript"><\/script>';
+		$(function(){$('#cnzzlayer').html(clt);});
+	</script>
+    <div style="display:none" id="cnzzlayer"></div>
+</body>
+</html>

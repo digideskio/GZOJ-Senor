@@ -11,7 +11,7 @@ function common_init()
 {
 	$("body").append('<div id="footer" style="height:20px;"></div>');
 	$.ajaxSetup({async:true});
-	$("body").append('<div id="rib-blur" tabindex="111110" style=""></div>');
+	$("body").append('<div id="rib-blur" tabindex="111110" style="position:fixed;left:0px;top:0px;"></div>');
 	UI_Init();
 	try
 	{
@@ -28,12 +28,12 @@ function common_init()
 	}
 	$('body').append('<div id="back-to-top" style="display:none"></div>');
 	window.onscroll=function(){
-		if((document.documentElement.scrollTop>=130||document.body.scrollTop>=130)&&!is_stt_show)
+		if((document.documentElement.scrollTop+document.body.scrollTop>=130)&&!is_stt_show)
 		{
 			is_stt_show=1;
 			$("#back-to-top").css('display','block');
 		}
-		if((document.documentElement.scrollTop<130&&document.body.scrollTop<130)&&is_stt_show)
+		if((document.documentElement.scrollTop+document.body.scrollTop<130)&&is_stt_show)
 		{
 			is_stt_show=0;
 			$('#back-to-top').css('display','none');

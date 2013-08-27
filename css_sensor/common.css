@@ -4,6 +4,7 @@
 body {
 	font-family:"Verdana", "Microsoft Yahei", "微软雅黑", "Geneva", sans-serif;
 	background:url(../img_sensor/winter_snow.jpg) fixed left top no-repeat;
+	
 	overflow-x:hidden;
 	overflow-y:scroll;
 	margin-bottom:80px;
