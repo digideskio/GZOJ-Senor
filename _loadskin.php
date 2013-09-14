@@ -1,7 +1,7 @@
 <?php
-	//Written By: Sensor - zhs (张森)
+	//Written By: Senor - zhs (张森)
 	require_once "./include/db_info.inc.php";
-	$SKINSTR=array('Sensor','Simple','Metro');
+	$SKINSTR=array('Senor','Simple','Metro');
 	$SKINCODE=array();
 	$SKINI=0;
 	foreach($SKINSTR as $SKINSTREACH)
@@ -37,7 +37,7 @@
 		global $SKINSTR;
 		global $SKINCODE;
 		$skin=$SKINSTR[$set_skin_id];
-		if(!($set_skin_id>=0&&$set_skin_id<=2)) {$skin='Sensor';$set_skin_id=0;}
+		if(!($set_skin_id>=0&&$set_skin_id<=2)) {$skin='Senor';$set_skin_id=0;}
 		setcookie("SkinID",$set_skin_id,time()+3600*24*365);
 		if(isset($_SESSION['user_id'])) mysql_query("update `users` set `skin`='$set_skin_id.' where `user_id`='".$_SESSION['user_id']."'");
 		//更新数据库

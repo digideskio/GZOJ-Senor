@@ -10,8 +10,8 @@
 require_once("../include/db_info.inc.php");
 ?>
 
-<link rel="stylesheet" type="text/css" href="../css_sensor/common.css" />
-<link rel="stylesheet" type="text/css" href="../css_sensor/input.css" />
-<script src="../js_sensor/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="../css_senor/common.css" />
+<link rel="stylesheet" type="text/css" href="../css_senor/input.css" />
+<script src="../js_senor/jquery.js"></script>
 <script>$(function(){$("body").wrapInner('<div style="background-color:rgba(255,255,255,0.7)"></div>');$(".btn").css('color','white');});</script>
 <!-- added by 张森 -->
