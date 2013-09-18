@@ -95,7 +95,7 @@ var_dump($tscore);
 foreach($arr as $key=>&$value)
 {
 ?>
-<tr style="line-height:22px;"><td style="text-align:right;padding-right:10px;width:55px;"><?=$key+1?></td><td><a target=_blank href=user-info-<?=$value['user']?>><?=$value['user']?></a></td><td style="text-align:center;color:rgb(<?=$ScoreColor[$value['totscore']/$probarr][0]?>,<?=$ScoreColor[$value['totscore']/$probarr][1]?>,<?=$ScoreColor[$value['totscore']/$probarr][2]?>);background-color:rgb(<?=255-$ScoreColor[$value['totscore']/$probarr][0]?>,<?=255-$ScoreColor[$value['totscore']/$probarr][1]?>,<?=255-$ScoreColor[$value['totscore']/$probarr][2]?>);"><?=$value['totscore']?></td>
+<tr style="line-height:22px;"><td style="text-align:right;padding-right:10px;width:55px;"><?=$key+1?></td><td><a target=_self href=user-info-<?=$value['user']?>><?=$value['user']?></a></td><td style="text-align:center;color:rgb(<?=$ScoreColor[$value['totscore']/$probarr][0]?>,<?=$ScoreColor[$value['totscore']/$probarr][1]?>,<?=$ScoreColor[$value['totscore']/$probarr][2]?>);background-color:rgb(<?=255-$ScoreColor[$value['totscore']/$probarr][0]?>,<?=255-$ScoreColor[$value['totscore']/$probarr][1]?>,<?=255-$ScoreColor[$value['totscore']/$probarr][2]?>);"><?=$value['totscore']?></td>
 <?php 
 for($i=0;$i<$probarr;$i++)
 {
