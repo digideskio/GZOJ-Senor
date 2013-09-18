@@ -136,7 +136,7 @@
 				if (isset($_SESSION['user_id'])) 
 					;//$view_problemset[$cnt][0]=check_ac($cid,$cnt);
 				$view_problemset[$cnt][1]= "$row->pid Problem &nbsp;".(chr($cnt+ord('A')));
-				$view_problemset[$cnt][2]= "<a href='contest-problem-$cid-$cnt'>$row->title</a>";
+				$view_problemset[$cnt][2]= "<a href='contest-p-$cid-$cnt'>$row->title</a>";
 				$view_problemset[$cnt][3]=$row->submit ;
 				//$view_problemset[$cnt][3]=$row->source ;
 				//$view_problemset[$cnt][4]=$row->accepted ;
