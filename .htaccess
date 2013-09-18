@@ -1,0 +1,40 @@
+ErrorDocument 404 /404.php
+
+RewriteEngine on
+RewriteBase /
+
+# forbidden
+RewriteRule ^oj- "Forbidden" [F]
+
+# forum
+RewriteRule ^forum$ bbs.php
+RewriteRule ^forum-problem-(\d+)$ bbs.php?pid=$1
+RewriteRule ^forum-thread-(\d+)$ thread.php?tid=$1
+RewriteRule ^forum-new-thread$ newpost.php
+
+# problem
+RewriteRule ^problem-set$ problemset.php
+RewriteRule ^problem-(\d+)$ problem.php?id=$1
+
+RewriteRule ^problem-status$ status.php
+RewriteRule ^problem-status-(.+)$ status.php?$1
+RewriteRule ^contest$ contest.php
+RewriteRule ^contest-(\d+)$ contest.php?cid=$1
+RewriteRule ^contest-p-(\d+)-(\d+)$ problem.php?cid=$1&pid=$2
+RewriteRule ^contest-result-(\d+)$ contestresult.php?cid=$1
+
+RewriteRule ^ranklist$ ranklist.php
+RewriteRule ^ranklist-(\d+)$ ranklist.php?start=$1
+RewriteRule ^about$ about.php
+
+RewriteRule ^skin$ changeskin.php
+RewriteRule ^skin-(\d+)$ changeskin.php?id=$1
+
+RewriteRule ^user-info-(.+)$ userinfo.php?user=$1
+RewriteRule ^user-settings$ settings.php
+RewriteRule ^user-mail$ mail.php
+RewriteRule ^user-mail-send-(.+)$ mail.php?to=$1
+RewriteRule ^user-mail-view-(\d+)$ mail.php?vid=$1
+
+RewriteRule ^login$ loginpage.php
+RewriteRule ^register$ registerpage.php

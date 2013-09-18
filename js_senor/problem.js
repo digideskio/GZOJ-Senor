@@ -67,7 +67,7 @@ function rf_problem_page_contest()
 {
 	$("#solution_button").fadeOut(200,"swing");
 	$("#talk-problem").css("display","none");
-	$("#view_tot_stat").html('<a href="../../oj-Senor/js_senor/contest.php?cid='+cid+'">返回赛题列表</a>').css({"display":"inline","opacity":"0"}).animate({"opacity":"1"},500,"swing");
+	$("#view_tot_stat").html('<a href="contest-'+cid+'">返回赛题列表</a>').css({"display":"inline","opacity":"0"}).animate({"opacity":"1"},500,"swing");
 	$.getJSON("ajax_problem_status.php",{id:id},function(data)
 	{
 		if(data["no"]==0)
