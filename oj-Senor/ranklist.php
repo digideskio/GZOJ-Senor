@@ -60,10 +60,10 @@
 						$fontstyle='';
 						if($rank<=3) $fontstyle=' style="color:rgb(0,200,0);text-shadow: 2px 2px 3px #999999;" ';
                         $view_rank[$i][0]="<div align=center$fontstyle>$rank</div>";
-                        $view_rank[$i][1]="<div align=left><a href='userinfo.php?user=".$row['user_id']."'>".$row['user_id']."</a>"."</div>";
+                        $view_rank[$i][1]="<div align=left><a href='user-info-".$row['user_id']."'>".$row['user_id']."</a>"."</div>";
                         //$view_rank[$i][2]= "<div align=left$fontstyle>".htmlspecialchars($row['nick'])."</div>";
-                        $view_rank[$i][2]="<div align=right$fontstyle><a href='status.php?user_id=".$row['user_id']."&jresult=4'>".$row['solved']."</a>"."</div>";
-                        $view_rank[$i][3]="<div align=right$fontstyle><a href='status.php?user_id=".$row['user_id']."'>".$row['submit']."</a>"."</div>";
+                        $view_rank[$i][2]="<div align=right$fontstyle><a href='problem-status-user_id=".$row['user_id']."&jresult=4'>".$row['solved']."</a>"."</div>";
+                        $view_rank[$i][3]="<div align=right$fontstyle><a href='problem-status-user_id=".$row['user_id']."'>".$row['submit']."</a>"."</div>";
 
                         if ($row['submit'] == 0)	//防止被0除
                                 $view_rank[$i][4]= "<font color=red>0%</font>";
@@ -125,7 +125,7 @@
   	<?php 
 	   echo "<center>";//$view_total
 		for($i = 0; $i < $view_total; $i += $page_size) {
-			echo "<a href='./ranklist.php?start=".strval($i).($scope?"&scope=$scope":"")."' class='btn".($i==$currank?" btn-warning' style='color:white":"' style='color:black").";min-width:70px'>";
+			echo "<a href='./ranklist-".strval($i).($scope?"&scope=$scope":"")."' class='btn".($i==$currank?" btn-warning' style='color:white":"' style='color:black").";min-width:70px'>";
 			echo strval ( $i + 1 );
 			echo "-";
 			echo strval ( $i + $page_size );
