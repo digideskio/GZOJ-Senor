@@ -304,10 +304,10 @@ else echo "<option value='-1'>All</option>";
 			}
 			?><td width="4%"></td><td width="1%"></tbody></table><div align=center><?php echo "[<a href=status.php?".$str2.">第一页</a>]&nbsp;&nbsp;";
 if (isset($_GET['prevtop']))
-        echo "[<a href=status.php?".$str2."&top=".$_GET['prevtop'].">上一页</a>]&nbsp;&nbsp;";
+        echo "[<a href=problem-status-".$str2."&top=".$_GET['prevtop'].">上一页</a>]&nbsp;&nbsp;";
 else
-        echo "[<a href=status.php?".$str2."&top=".($top+20).">上一页</a>]&nbsp;&nbsp;";
-echo "[<a href=status.php?".$str2."&top=".$bottom."&prevtop=$top>下一页</a>]";
+        echo "[<a href=problem-status-".$str2."&top=".($top+20).">上一页</a>]&nbsp;&nbsp;";
+echo "[<a href=problem-status-".$str2."&top=".$bottom."&prevtop=$top>下一页</a>]";
 ?></div>
 </div>
 <div id="stat-l2" class="board" style="display:none;margin-top:20px;padding-top:10px;padding-bottom:20px;padding-left:0px;padding-right:0px;width:950px;">
