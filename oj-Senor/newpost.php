@@ -1,11 +1,33 @@
 <?php
-
-	echo "<title>新主题 - GZOJ[未完成]</title>";
-	if (!isset($_SESSION['user_id'])){
-		echo "<a href=bbs.php>Please Login First</a>";
-		exit(0);
-	}
+    require_once('include/db_info.inc.php');
+	header("Pragma: no-cache");
+	header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
+	header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 ?>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="GZOJ,GanZhongOJ,gygjzx,OI,GZOI,赣榆高级中学OI,赣榆高级中学,赣榆高级中学信息学,赣榆高级中学信息学奥林匹克" />
+<title>撰写新主题 - GZOJ</title>
+<script language="javascript" src="js_senor/jquery.js"></script>
+<script language="javascript" src="js_senor/jquery.color.js"></script>
+<script language="javascript" src="js_senor/common.js"></script>
+<link rel="stylesheet" type="text/css" href="css_senor/common.css" />
+<link rel="stylesheet" type="text/css" href="css_senor/input.css" />
+<script>$(function(){common_init();});</script>
+</head>
+
+<body>
+<div id="preloader">
+</div>
+<?php require('include/senoroj-navbar.php');?>
+
+<div id="container">
+<div id="mainboard" class="board" style="padding-bottom:40px;"><h1>撰写新主题</h1></div>
+</div>
+</body>
+</html>
 
 <center>
 <div style="width:90%; text-align:left">

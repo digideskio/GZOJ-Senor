@@ -24,7 +24,7 @@
 <?php require('include/senoroj-navbar.php');?>
 
 <div id="container">
-<div id="mainboard" class="board" style="padding-bottom:40px;"><h1>关于赣中OJ</h1><div class="em-l"><div class="em-t">GZOJ是由江苏省赣榆高级中学主办的信息学奥林匹克竞赛在线评测系统，旨在为我校参赛选手和OIer提供优质的在线评测服务。</div><div class="em-t">
+<div id="mainboard" class="board" style="padding-bottom:40px;"><?=$_SERVER['REMOTE_ADDR']?><br><h1>关于赣中OJ</h1><div class="em-l"><div class="em-t">GZOJ是由江苏省赣榆高级中学主办的信息学奥林匹克竞赛在线评测系统，旨在为我校参赛选手和OIer提供优质的在线评测服务。</div><div class="em-t">
 基于<a href="https://code.google.com/p/hustoj/" target="_blank">HustOJ</a>的基本框架（一部分的数据库表结构，以及后台部分代码）。
 </div></div>
 <div class="em-l"><div class="em-t">由2010级张森(<a href="https://github.com/zhs490770/" target="_blank">zhs</a>)、陈政儒(<a href="https://github.com/ZeroClad" target="_blank">zero</a>)和匡振宇(<a href="http://bitex.me" target="_blank">Bitex</a>)暂时负责管理。多皮肤接口、后台翻译、转接：zhs</div></div>

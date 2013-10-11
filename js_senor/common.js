@@ -38,10 +38,10 @@ function common_init()
 			is_stt_show=0;
 			$('#back-to-top').css('display','none');
 		}
-	}
+	};
 	window.onunload=function(){
 		document.cookie='SenorOpacity='+$('#nav').css('opacity')+'set';
-	}
+	};
 	var readopp=0.4;
 	if(/SenorOpacity/.test(document.cookie))
 	{
@@ -133,25 +133,68 @@ function index_init()
 	bt_func.push(news_back_to_list);
 }
 /*声明回调函数*/
-function _nav_mi(){$(this).stop(true,false).animate({opacity:"1"},500).css({filter:"alpha(Opacity=100)"})}function _nav_mo(){if(parseFloat($(this).css('opacity'))<0.5)return;if(is_somemenu_on)return;$(this).stop(true,false).animate({opacity:"0.4"},500).css({filter:"alpha(Opacity=40)"})}function _nav_li_mi(){$(this).stop(true,false).animate({"background-color":"#dddddd","color":"#000000"},200);$(this).children().stop(true,false).animate({"color":"#000000"},200)}function _nav_li_mo(){if(is_somemenu_on);if($(this).children(".dropdown-menu").css("display")!='block'){$(this).stop(true,false).animate({"background-color":"#000000","color":"#ccc"},200);$(this).children("a").animate({"color":"#ccc"},200);}
-//就是这个消失……应该重写
-if(0)
-if($(this).children(".dropdown-menu").css("display")!="none")$(this).children(".dropdown-menu").animate({height:"0px"},300,"swing",function(){$(this).css("display","none");});
+function _nav_mi(){
+    $(this).stop(true,false).animate({opacity:"1"},500).css({filter:"alpha(Opacity=100)"});
+}
+function _nav_mo(){
+    if(parseFloat($(this).css('opacity'))<0.5)return;
+    if(is_somemenu_on)return;
+    $(this).stop(true,false).animate({opacity:"0.4"},500).css({filter:"alpha(Opacity=40)"});
+}
+function _nav_li_mi(){
+    $(this).stop(true,false).animate({"background-color":"#dddddd","color":"#000000"},200);
+    $(this).children().stop(true,false).animate({"color":"#000000"},200);
+}
+function _nav_li_mo(){
+    if(is_somemenu_on);
+    if($(this).children(".dropdown-menu").css("display")!='block'){
+        $(this).stop(true,false).animate({"background-color":"#000000","color":"#ccc"},200);
+        $(this).children("a").animate({"color":"#ccc"},200);
+    }
+    //就是这个消失……应该重写
+    if(0)
+    if($(this).children(".dropdown-menu").css("display")!="none")
+        $(this).children(".dropdown-menu").animate({height:"0px"},300,"swing",function(){$(this).css("display","none");});
 }
 function _nav_li_b(){
 	//$(this).children("a").click();
-	}
-function _nav_li2_mi(){$(this).stop(true,false).animate({"background-color":"#dddddd","color":"#000000"},200);$(this).children().stop(true,false).animate({"color":"#000000"},200)}function _nav_li2_mo(){$(this).stop(true,false).animate({"background-color":"#FCF","color":"#000000"},200);$(this).children().stop(true,false).animate({"color":"#000000"},200)}function _nav_li_a_click(e){
+}
+function _nav_li2_mi(){
+    $(this).stop(true,false).animate({"background-color":"#dddddd","color":"#000000"},200);
+    $(this).children().stop(true,false).animate({"color":"#000000"},200);
+}
+function _nav_li2_mo(){
+    $(this).stop(true,false).animate({"background-color":"#FCF","color":"#000000"},200);
+    $(this).children().stop(true,false).animate({"color":"#000000"},200);
+}
+function _nav_li_a_click(e){
 	e.preventDefault();
 	e.stopPropagation();
-	if($(this).parent().children(".dropdown-menu").attr("x-data-stat")!="1"){$(this).parent().children(".dropdown-menu").css("height","auto").fadeIn(300,"linear",function(){$(this).parent().children(".dropdown-menu").attr("x-data-stat","1");});is_somemenu_on=1;}
-else{is_somemenu_on=0;$(this).parent().children(".dropdown-menu").animate({height:"0px"},300,"swing",function(){$(this).css("display","none");$(this).stop(true,false).parent().animate({"background-color":"#000000","color":"#ccc"},200);$(this).parent().children("a").animate({"color":"#ccc"},200);$(this).parent().children(".dropdown-menu").attr("x-data-stat","0");});}
+	if($(this).parent().children(".dropdown-menu").attr("x-data-stat")!="1"){
+        $(this).parent().children(".dropdown-menu").css("height","auto").fadeIn(300,"linear",function(){
+            $(this).parent().children(".dropdown-menu").attr("x-data-stat","1");
+        });
+        is_somemenu_on=1;
+    }else{
+        is_somemenu_on=0;
+        $(this).parent().children(".dropdown-menu").animate({height:"0px"},300,"swing",function(){
+            $(this).css("display","none");
+            $(this).stop(true,false).parent().animate({"background-color":"#000000","color":"#ccc"},200);
+            $(this).parent().children("a").animate({"color":"#ccc"},200);
+            $(this).parent().children(".dropdown-menu").attr("x-data-stat","0");
+        });
+    } 
 }
 function _body_click(){
 	//remove all menus
 	$(".dropdown-menu[x-data-stat='1']").parent().children("a").click();$("#nav").mouseleave();
 }
-function _btn_trans_mi(){$(this).stop(true,false).animate({opacity:"1"},500).css({filter:"alpha(Opacity=100)"});}function _btn_trans_mo(){$(this).stop(true,false).animate({opacity:"0.4"},500).css({filter:"alpha(Opacity=40)"})}
+function _btn_trans_mi(){
+    $(this).stop(true,false).animate({opacity:"1"},500).css({filter:"alpha(Opacity=100)"});
+}
+function _btn_trans_mo(){
+    $(this).stop(true,false).animate({opacity:"0.4"},500).css({filter:"alpha(Opacity=40)"});
+}
 
 function _dropdown_menu_i_mi(){
 	$(this).stop(true,false).animate({"background-color":"#e2effa"},300);
@@ -170,22 +213,23 @@ function _select_blur()
 /*=========*/
 function pswkey(e)
 {
-	var keynum
-	var keychar
-	var numcheck
+	var keynum, keychar, numcheck;
 	if(window.event) // IE
 	{
-		keynum = e.keyCode
+		keynum = e.keyCode;
 	}
 	else if(e.which) // Netscape/Firefox/Opera
 	{
-		keynum = e.which
+		keynum = e.which;
 	}
 	return keynum==13;
 }
 function showloginerr(txt,isgreen)
 {
-	if(typeof(isgreen)!=='undefined'){if(isgreen==2)$("#login-err-text").css("color","orange");else $("#login-err-text").css("color","green");}else $("#login-err-text").css("color","red");
+	if(typeof(isgreen)!=='undefined'){
+        if(isgreen==2)$("#login-err-text").css("color","orange");
+        else $("#login-err-text").css("color","green");
+    }else $("#login-err-text").css("color","red");
 	$("#login-dropdown-menu").animate({height:"180px"},200,"swing",function(){});
 	$("#login-err-text").html(txt).fadeIn(200);
 }
@@ -200,29 +244,45 @@ function submitlogin()
 		return false;
 	}
 	$("#loading-login").css("display","block");
-	$.ajax({async:true,url:"login.php",dataType:"json",type:"POST",data:{user_id:username,password:password,utype:"normal",vcode:$("#loginvrc").val()},timeout:10000,error: function(){showloginerr("发生未知错误")},success:function(data){
-		if(data["no"]==0)	//登陆成功
-		{
-			showloginerr("登陆成功",1);
-			if(can_refresh===0)
-				setTimeout(function(){successLogin(0);},100);
-			else
-			{
-				window.top.location.href='./';
-			}
-		}
-		else if(data["no"]==1)
-		{
-			showloginerr(data["err"]);
-			refresh_verifycode();
-		}
-		else if(data["no"]==2)
-		{
-			showloginerr(data["err"],2);
-			$("#loginvrc").val("");
-			refresh_verifycode();
-		}
-	}});
+	$.ajax({
+        async: true,
+        url: "login.php",
+        dataType: "json",
+        type: "POST",
+        data: {
+            user_id: username,
+            password: password,
+            utype: "normal",
+            vcode: $("#loginvrc").val()
+        },
+        timeout: 10000,
+        error: function() {
+            showloginerr("发生未知错误");
+        },
+        success: function(data) {
+		    if(data["no"]==0)	//登陆成功
+		    {
+			    showloginerr("登陆成功",1);
+			    if(can_refresh===0)
+				    setTimeout(function(){successLogin(0);},100);
+			    else
+			    {
+				    window.top.location.href='./';
+			    }
+		    }
+            else if(data["no"]==1)
+            {
+                showloginerr(data["err"]);
+                refresh_verifycode();
+            }
+            else if(data["no"]==2)
+            {
+                showloginerr(data["err"],2);
+                $("#loginvrc").val("");
+                refresh_verifycode();
+            }
+	    }
+    });
 }
 
 function successLogin(s)
@@ -244,13 +304,16 @@ function successLogin(s)
 
 function exitLogin()
 {
-	$.ajax({async:true,url:"logout.php",dataType:"json",type:"GET",timeout:10000,error: function(){alert("退出时ajax发生未处理异常，恳请您能够反馈给我")},success:function(data){
+	$.ajax({async:true,url:"logout.php",dataType:"json",type:"GET",timeout:10000,error: function(){alert("退出时ajax发生未处理异常，恳请您能够反馈给我");},success:function(data){
 		if(data["no"]==0)
 		{
 			refresh_others();
 			$("#user-nav-bar").fadeOut(300,"linear",function(){
-			$.get("ajax_ojheader.php",""+Math.random(),function(data){ajaxUserInfo=data;$("#user-nav-bar").html(ajaxUserInfo).fadeIn(200);UI_Init();$("#nav").stop(true,false).animate({opacity:"0.4"},500).css({filter:"alpha(Opacity=40)"});});
-		});
+			    $.get("ajax_ojheader.php",""+Math.random(),function(data){
+                    ajaxUserInfo=data;$("#user-nav-bar").html(ajaxUserInfo).fadeIn(200);
+                    UI_Init();$("#nav").stop(true,false).animate({opacity:"0.4"},500).css({filter:"alpha(Opacity=40)"});
+                });
+		    });
 		}
 		else
 		{
@@ -259,7 +322,10 @@ function exitLogin()
 	}});
 }
 
-function refresh_verifycode(){$("#vcode-layer").html('<img src="../vcode.php?'+Math.random()+'" id="verifycode-img" alt="验证码图形" />');$("#loginvrc,#vcode").val("").focus();}
+function refresh_verifycode() {
+    $("#vcode-layer").html('<img src="../vcode.php?'+Math.random()+'" id="verifycode-img" alt="验证码图形" />');
+    $("#loginvrc,#vcode").val("").focus();
+}
 
 function refresh_others()
 {
@@ -330,7 +396,15 @@ function show_news(id)
 				$("#newsshowboard-layer").css({"display":"block","height":(screen.availHeight-240)+"px"});
 				$("#newsshowboard").html(data['content']);
 				$('#news-author').html('<a href="../../oj-Senor/js_senor/userinfo.php?user='+data['user_id']+'" target="_blank">'+data['user_id']+'</a>');
-				$("#newsshowboard").find("img").each(function(){if($(this).width()>980){ $(this).click(function(){window.open($(this).attr('src'),'_target');});$(this).height($(this).height()*980/$(this).width());$(this).css("cursor",'pointer');$(this).width(980);}});
+				$("#newsshowboard").find("img").each(function(){
+                    if($(this).width()>980){
+                        $(this).click(function(){
+                            window.open($(this).attr('src'),'_target');
+                        });
+                        $(this).height($(this).height()*980/$(this).width());
+                        $(this).css("cursor",'pointer');$(this).width(980);
+                    }
+                });
 				$("#newstitle").html(data['title']);
 				$("#newsshowboard-l2").scrollTop(0);
 				$("#newsshowboard-l2").perfectScrollbar({wheelSpeed:40});
@@ -356,7 +430,7 @@ function news_back_to_list()
 
 
 (function(a) {
-    a.fn.typewriter = function(callback) {			//modified by zhs;小森森 
+    a.fn.typewriter = function(callback) { 
         this.each(function() {
             var d = a(this),
             c = d.html(),

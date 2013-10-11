@@ -95,7 +95,7 @@ $isadmin = isset($_SESSION['administrator']);
 <form action="post.php?action=reply" method=post>
 <input type=hidden name=tid value=<?php echo $_REQUEST['tid'];?>>
 <div><textarea name=content style="border:1px dashed #8080FF; width:700px; height:200px; font-size:75%;margin:0 10px; padding:10px"></textarea></div>
-<div><input type="submit" style="margin:5px 10px" value="提交" class="button"></input></div>
+<div><input type="submit" style="margin:5px 10px" value="发表" class="button"></input></div>
 </form>
 </div>
 <?php }

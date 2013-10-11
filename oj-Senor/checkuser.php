@@ -5,7 +5,7 @@
 	header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
 
 $user_id=trim($_POST['user_id']);
-if(!is_valid_user_name($user_id))
+if(!is_valid_user_name($user_id)||strlen($user_id)<3)
 {
 	echo '{"no":2,"err":"用户名必须为3-20位字母数字汉字或下划线"}';
 	exit;
